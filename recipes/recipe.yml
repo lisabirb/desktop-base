@@ -28,7 +28,6 @@ modules:
       - virt-manager
       - flatpak-builder
       - qemu
-      - ublue-brew
       - fastfetch
       - fish
       - bubblejail
@@ -38,6 +37,7 @@ modules:
   - type: bling
     install:
       - rpmfusion
+  - type: brew
 
 #  - type: default-flatpaks
 #    configurations:
