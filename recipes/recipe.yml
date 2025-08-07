@@ -26,6 +26,8 @@ modules:
       - neovim
       - libvirt
       - virt-manager
+      - flatpak-builder
+      - qemu
       - ublue-brew
       - fastfetch
       - fish
