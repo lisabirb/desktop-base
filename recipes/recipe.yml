@@ -34,6 +34,10 @@ modules:
       - bubblejail
       - NetworkManager-tui
       - starship
+      - uupd
+  - type: bling
+    install:
+      - rpmfusion
 
 #  - type: default-flatpaks
 #    configurations:
