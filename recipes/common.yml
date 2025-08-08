@@ -3,12 +3,6 @@ modules:
     files:
       - source: system
         destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
-  - type: bling
-    install:
-      - rpmfusion
-  - type: script
-    snippets:
-      - "rm /etc/yum.repos.d/negativo17-fedora-multimedia.repo"
   - type: dnf
     repos:
       copr:
