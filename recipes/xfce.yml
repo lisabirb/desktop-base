@@ -7,4 +7,6 @@ modules:
   - from-file: common.yml
   - type: dnf
     group-install:
-      - xfce-desktop-environment
+      with-optional: true
+      packages:
+        - xfce-desktop-environment
