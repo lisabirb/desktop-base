@@ -13,10 +13,10 @@ modules:
         - lxde-apps
     install:
       packages:
-        - lxdm
+        - slim
   - type: systemd
     system:
       disabled:
         - lightdm
       enabled:
-        - lxdm
+        - slim
