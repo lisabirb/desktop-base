@@ -14,7 +14,7 @@ modules:
         - secureblue/bubblejail
       files:
         remove:
-          - negativo17-fedora-multimedia.repo
+          - negativo17-fedora-multimedia
     install:
       packages:
         - neovim
