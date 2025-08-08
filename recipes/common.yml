@@ -12,6 +12,9 @@ modules:
         - atim/starship
         - ublue-os/packages
         - secureblue/bubblejail
+    files:
+      remove:
+        - negativo17-fedora-multimedia.repo
     install:
       packages:
         - neovim
