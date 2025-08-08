@@ -1,0 +1,22 @@
+---
+name: desktop-mate
+description: Image with MATE
+base-image: ghcr.io/ublue-os/base-main
+image-version: 42
+modules:
+  - from-file: common.yml
+  - type: dnf
+    group-install:
+      with-optional: true
+      packages:
+        - mate-desktop-environment
+        - mate-applications
+    install:
+      packages:
+        - lxdm
+  - type: systemd
+    system:
+      disabled:
+        - lightdm
+      enabled:
+        - lxdm
