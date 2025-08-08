@@ -1,10 +1,10 @@
 ---
 name: desktop-xfce
 description: Image with XFCE
-base-image: ghcr.io/lisabirb/desktop-base
-image-version: latest
+base-image: ghcr.io/ublue-os/base-main
+image-version: 42
 modules:
-  - type: rpm-ostree
-    install:
-      - @xfce-desktop-environment
-  - type: signing
+  - from-file: common.yml
+  - type: dnf
+    group-install:
+      - xfce-desktop-environment
