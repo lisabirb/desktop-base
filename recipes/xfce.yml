@@ -10,3 +10,12 @@ modules:
       with-optional: true
       packages:
         - xfce-desktop-environment
+    install:
+      packages:
+        - lxdm
+  - type: systemd
+    system:
+      disabled:
+        - lightdm
+      enabled:
+        - lxdm
