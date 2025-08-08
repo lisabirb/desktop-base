@@ -1,0 +1,10 @@
+---
+name: desktop-xfce
+description: Image with XFCE
+base-image: ghcr.io/lisabirb/desktop-base
+image-version: latest
+modules:
+  - type: rpm-ostree
+    install:
+      - @xfce-desktop-environment
+  - type: signing
