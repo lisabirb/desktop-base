@@ -13,20 +13,19 @@ modules:
         - ublue-os/packages
         - secureblue/bubblejail
     install:
-      - neovim
-      - libvirt
-      - virt-manager
-      - flatpak-builder
-      - qemu
-      - fastfetch
-      - fish
-      - bubblejail
-      - NetworkManager-tui
-      - starship
-      - uupd
+      packages:
+        - neovim
+        - flatpak-builder
+        - fastfetch
+        - fish
+        - bubblejail
+        - NetworkManager-tui
+        - starship
+        - uupd
     group-install:
       with-optional: true
       packages:
+        - virtualization
         - base-x
   - type: brew
 
