@@ -1,0 +1,16 @@
+modules:
+  - type: dnf
+    install:
+      packages:
+        - greetd
+        - tuigreet
+  - type: systemd
+    system:
+      disable:
+        - lightdm
+      enable:
+        - greetd
+  - type: files
+    files:
+      - source: tuigreet/greetd.toml
+        destination: /etc/greetd/config.toml
