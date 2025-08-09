@@ -1,0 +1,11 @@
+modules:
+  - type: dnf
+    install:
+      packages:
+        - slim
+  - type: systemd
+    system:
+      disabled:
+        - lightdm
+      enabled:
+        - slim
