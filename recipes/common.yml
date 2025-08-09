@@ -7,7 +7,7 @@ modules:
     repos:
       copr:
         - atim/starship
-        - ublue-os/packages
+        # - ublue-os/packages
         - secureblue/bubblejail
     install:
       packages:
@@ -18,7 +18,7 @@ modules:
         - bubblejail
         - NetworkManager-tui
         - starship
-        - uupd
+        # - uupd
     group-install:
       with-optional: true
       packages:
