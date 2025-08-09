@@ -1,0 +1,19 @@
+---
+name: experimental
+description: Experimental image
+base-image: ghcr.io/ublue-os/base-main
+image-version: 42
+modules:
+  - from-file: common.yml
+  - type: dnf
+    repos:
+      copr:
+        - yalter/niri
+    install:
+      packages:
+        - niri
+        - cage
+        - openbox
+        - greetd
+        - gtkgreet
+        - sway
