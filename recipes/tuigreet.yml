@@ -1,13 +1,8 @@
 modules:
-  - type: dnf
-    install:
-      packages:
-        - greetd
-        - tuigreet
-  - type: systemd
-    system:
-      enable:
-        - greetd
+  - type: script
+    snippet:
+      - "dnf -y install greetd tuigreet"
+      - "systemctl enable greetd"
   - type: files
     files:
       - source: tuigreet/greetd.toml

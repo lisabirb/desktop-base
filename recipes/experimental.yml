@@ -21,9 +21,8 @@ modules:
         - sway
         - mako
         - wine
-        - uupd
-  - type: systemd
-    system:
-      enable:
-        uupd.timer
+  - type: script
+    snippet:
+      - "dnf -y install uupd"
+      - "systemctl enable uupd.timer"
   - from-file: asciicompat.yml
