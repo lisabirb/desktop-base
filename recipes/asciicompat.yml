@@ -1,0 +1,8 @@
+modules:
+  - type: files
+    files:
+      - source: py/asciicompat.py
+        destination: /usr/bin/asciicompat.py
+  - type: script
+    snippets:
+      - "/bin/python3 /usr/bin/asciicompat.py"
