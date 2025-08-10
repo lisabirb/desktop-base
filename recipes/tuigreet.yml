@@ -1,6 +1,6 @@
 modules:
   - type: script
-    snippet:
+    snippets:
       - "dnf -y install greetd tuigreet"
       - "systemctl enable greetd"
   - type: files

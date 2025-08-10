@@ -22,7 +22,7 @@ modules:
         - mako
         - wine
   - type: script
-    snippet:
+    snippets:
       - "dnf -y install uupd"
       - "systemctl enable uupd.timer"
   - from-file: asciicompat.yml
