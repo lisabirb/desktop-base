@@ -23,6 +23,7 @@ modules:
         - gtkgreet
         - sway
         - mako
+        - wine
         - uupd
   - type: systemd
     system:
