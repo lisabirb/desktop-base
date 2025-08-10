@@ -6,8 +6,6 @@ modules:
         - tuigreet
   - type: systemd
     system:
-      disable:
-        - lightdm
       enable:
         - greetd
   - type: files
