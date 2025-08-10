@@ -13,6 +13,7 @@ modules:
     repos:
       copr:
         - yalter/niri
+        - ublue-os/packages
     install:
       packages:
         - niri
@@ -22,3 +23,8 @@ modules:
         - gtkgreet
         - sway
         - mako
+        - uupd
+  - type: systemd
+    system:
+      enable:
+        uupd.timer
