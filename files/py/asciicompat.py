@@ -30,4 +30,4 @@ print(dict(failed))
 for pkg, files in failed.items():
     for file in files:
         os.system(f"mv {file} {ascii(file).replace("\\u", "_u")}")
-os.system("rm /usr/bin/asciicompat")
+os.system("rm /usr/bin/asciicompat.py")
