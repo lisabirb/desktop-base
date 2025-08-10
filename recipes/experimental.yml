@@ -19,8 +19,6 @@ modules:
         - niri
         - cage
         - openbox
-        - greetd
-        - gtkgreet
         - sway
         - mako
         - wine
