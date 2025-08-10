@@ -17,6 +17,7 @@ modules:
     install:
       packages:
         - niri
+        - iotop
         - cage
         - openbox
         - sway
