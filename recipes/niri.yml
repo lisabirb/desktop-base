@@ -13,3 +13,4 @@ modules:
     install:
       packages:
         - niri
+  - from-file: asciicompat.yml
