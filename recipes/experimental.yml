@@ -6,25 +6,16 @@ image-version: 42
 modules:
   - from-file: common.yml
   - from-file: tuigreet.yml
-  - type: bling
-    install:
-      - rpmfusion
   - type: dnf
     repos:
       copr:
         - yalter/niri
-        - ublue-os/packages
     install:
       packages:
         - niri
-        - iotop
         - cage
         - openbox
         - sway
         - mako
         - wine
-  - type: script
-    snippets:
-      - "dnf -y install uupd"
-      - "systemctl enable uupd.timer"
   - from-file: asciicompat.yml

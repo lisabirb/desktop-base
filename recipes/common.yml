@@ -3,28 +3,35 @@ modules:
     files:
       - source: system
         destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
+  - type: bling
+    install:
+      - rpmfusion
   - type: dnf
     repos:
       copr:
         - atim/starship
-        # - ublue-os/packages
+        - ublue-os/packages
         - secureblue/bubblejail
     install:
       packages:
         - neovim
+        - iotop
         - flatpak-builder
         - fastfetch
         - fish
         - bubblejail
         - NetworkManager-tui
         - starship
-        # - uupd
     group-install:
       with-optional: true
       packages:
         - virtualization
         - base-x
   - type: brew
+  - type: script
+    snippets:
+      - "dnf -y install uupd"
+      - "systemctl enable uupd.timer"
 
   #  - type: default-flatpaks
   #    configurations:
