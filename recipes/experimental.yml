@@ -9,5 +9,5 @@ modules:
     group-install:
       with-optional: true
       packages:
-        - lxde-desktop
-        - lxde-apps
+        - mate-desktop-environment
+        - mate-applications
