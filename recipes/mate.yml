@@ -1,7 +1,7 @@
 ---
 name: desktop-mate
 description: Image with MATE
-base-image: ghcr.io/ublue-os/base-main
+base-image: quay.io/fedora-ostree-desktops/base-atomic
 image-version: 42
 modules:
   - from-file: common.yml
