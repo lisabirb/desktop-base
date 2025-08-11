@@ -1,21 +1,13 @@
 ---
 name: experimental
-description: Experimental image
+description: Experimental desktop image
 base-image: quay.io/fedora-ostree-desktops/base-atomic
 image-version: 42
 modules:
   - from-file: common.yml
-  - from-file: tuigreet.yml
   - type: dnf
-    repos:
-      copr:
-        - yalter/niri
-    install:
+    group-install:
+      with-optional: true
       packages:
-        - niri
-        - cage
-        - openbox
-        - sway
-        - mako
-        - wine
-  - from-file: asciicompat.yml
+        - lxde-desktop
+        - lxde-apps
