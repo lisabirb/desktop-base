@@ -30,6 +30,7 @@ jobs:
           - recipe.yml
           - xfce.yml
           - mate.yml
+          - experimental.yml
           - lxde.yml
     steps:
       # the build is fully handled by the reusable github action
