@@ -27,7 +27,7 @@ jobs:
       matrix:
         recipe:
           # !! Add your recipes here
-          - recipe.yml
+          - trinity.yml
           - xfce.yml
           - mate.yml
           - experimental.yml
