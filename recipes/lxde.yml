@@ -11,3 +11,4 @@ modules:
       packages:
         - lxde-desktop
         - lxde-apps
+  - from-file: exclusions.yml

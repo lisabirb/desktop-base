@@ -11,3 +11,4 @@ modules:
       packages:
         - xfce-desktop-environment
   - from-file: tuigreet.yml
+  - from-file: exclusions.yml

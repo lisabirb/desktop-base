@@ -12,3 +12,4 @@ modules:
         - mate-desktop-environment
         - mate-applications
   - from-file: tuigreet.yml
+  - from-file: exclusions.yml
