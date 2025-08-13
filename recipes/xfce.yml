@@ -5,9 +5,9 @@ base-image: quay.io/fedora-ostree-desktops/base-atomic
 image-version: 42
 modules:
   - from-file: common.yml
-  - from-file: slim.yml
   - type: dnf
     group-install:
       with-optional: true
       packages:
         - xfce-desktop-environment
+  - from-file: tuigreet.yml
