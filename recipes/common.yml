@@ -23,6 +23,10 @@ modules:
         - NetworkManager-tui
         - starship
         - btop
+    remove:
+      auto-remove: true
+      packages:
+        - firefox
     group-install:
       with-optional: true
       packages:
