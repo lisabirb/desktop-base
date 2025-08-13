@@ -11,3 +11,4 @@ modules:
       packages:
         - mate-desktop-environment
         - mate-applications
+  - from-file: tuigreet.yml

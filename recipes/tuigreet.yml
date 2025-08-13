@@ -2,6 +2,7 @@ modules:
   - type: script
     snippets:
       - "dnf -y install greetd tuigreet"
+      - "systemctl disable lightdm"
       - "systemctl enable greetd"
   - type: files
     files:
