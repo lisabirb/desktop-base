@@ -35,12 +35,12 @@ modules:
         - NetworkManager-tui
         - starship
         - btop
+      allow-erasing: true
     group-install:
       with-optional: true
       packages:
         - virtualization
         - base-x
-    allow-erasing: true
   - type: brew
   - type: script
     snippets:
