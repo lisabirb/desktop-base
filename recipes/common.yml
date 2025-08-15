@@ -25,6 +25,7 @@ modules:
       packages:
         - librewolf
         - ffmpeg
+        - brightnessctl
         - neovim
         - iotop
         - flatpak-builder

@@ -1,0 +1,19 @@
+modules:
+  - type: dnf
+    repos:
+      copr:
+        # TODO: create COPR repo(s) for wl-kbptr and swww and then install them here
+        solopasha/hyprland
+    install:
+      packages:
+        - wlr-randr
+        - azote
+        - swaybg
+        - gammastep
+        - grim
+        - slurp
+        - hyprpicker
+        - cage
+        - gamescope
+        - labwc
+      allow-erasing: true

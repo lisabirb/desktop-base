@@ -6,6 +6,7 @@ image-version: 42
 modules:
   - from-file: common.yml
   - from-file: tuigreet.yml
+  - from-file: wayland-utilities.yml
   - type: dnf
     repos:
       copr:
