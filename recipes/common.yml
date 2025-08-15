@@ -7,6 +7,8 @@ modules:
     install:
       - rpmfusion
   # disable fedora flatpak service then set up flathub
+  - type: script
+    snippets:
       - "systemctl disable flatpak-add-fedora-repos.service"
       - "flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo"
   # librewolf repo
