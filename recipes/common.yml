@@ -6,7 +6,8 @@ modules:
   - type: bling
     install:
       - rpmfusion
-  # set up flathub
+  # disable fedora flatpak service then set up flathub
+      - "systemctl disable flatpak-add-fedora-repos.service"
       - "flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo"
   # librewolf repo
   - type: script
