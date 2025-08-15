@@ -19,6 +19,7 @@ modules:
         - secureblue/bubblejail
     install:
       packages:
+        - ffmpeg
         - neovim
         - iotop
         - flatpak-builder
@@ -33,6 +34,7 @@ modules:
       packages:
         - virtualization
         - base-x
+    allow-erasing: true
   - type: brew
   - type: script
     snippets:

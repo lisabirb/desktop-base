@@ -16,7 +16,6 @@ modules:
         - trinity-desktop-all
         - brightnessctl
         - redshift
-      allow-erasing: true
   - type: script
     snippets:
       # Unfortunately, SELinux must be disabled in order for TDM (the Trinity login manager) to work
