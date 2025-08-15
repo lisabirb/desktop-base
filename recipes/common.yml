@@ -23,6 +23,7 @@ modules:
         - secureblue/bubblejail
     install:
       packages:
+        - sxiv
         - librewolf
         - ffmpeg
         - brightnessctl
