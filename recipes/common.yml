@@ -14,7 +14,7 @@ modules:
   # librewolf repo
   - type: script
     snippets:
-      - "curl -fsSL https://repo.librewolf.net/librewolf.repo | pkexec tee /etc/yum.repos.d/librewolf.repo"
+      - "curl -fsSL https://repo.librewolf.net/librewolf.repo | tee /etc/yum.repos.d/librewolf.repo"
   - type: dnf
     repos:
       copr:
