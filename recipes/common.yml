@@ -6,10 +6,7 @@ modules:
   - type: bling
     install:
       - rpmfusion
-  # get rid of fedora's weird flatpak repo and set up flathub instead
-  - type: script
-    snippets:
-      - "flatpak remote-delete fedora"
+  # set up flathub
       - "flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo"
   # librewolf repo
   - type: script
