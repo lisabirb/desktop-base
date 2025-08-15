@@ -26,6 +26,7 @@ modules:
         - fastfetch
         - fish
         - bubblejail
+        - syncthing
         - NetworkManager-tui
         - starship
         - btop
