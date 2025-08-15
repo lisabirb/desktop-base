@@ -3,7 +3,7 @@ modules:
     repos:
       copr:
         # TODO: create COPR repo(s) for wl-kbptr and swww and then install them here
-        solopasha/hyprland
+        - solopasha/hyprland
     install:
       packages:
         - wlr-randr
