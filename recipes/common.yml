@@ -24,6 +24,7 @@ modules:
     install:
       packages:
         - sxiv
+        - GraphicsMagick
         - librewolf
         - ffmpeg
         - brightnessctl
