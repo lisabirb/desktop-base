@@ -11,6 +11,10 @@ modules:
     snippets:
       - "flatpak remote-delete fedora"
       - "flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo"
+  # librewolf repo
+  - type: script
+    snippets:
+      - "curl -fsSL https://repo.librewolf.net/librewolf.repo | pkexec tee /etc/yum.repos.d/librewolf.repo"
   - type: dnf
     repos:
       copr:
@@ -19,6 +23,7 @@ modules:
         - secureblue/bubblejail
     install:
       packages:
+        - librewolf
         - ffmpeg
         - neovim
         - iotop
