@@ -38,6 +38,10 @@ modules:
         - NetworkManager-tui
         - starship
         - btop
+        # Fonts
+        - cascadia-mono-nf-fonts
+        - cascadia-code-nf-fonts
+        - terminus-fonts
       allow-erasing: true
     group-install:
       with-optional: true
