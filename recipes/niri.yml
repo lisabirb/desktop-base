@@ -16,3 +16,4 @@ modules:
         - niri
         - xwayland-satellite
   - from-file: asciicompat.yml
+  - from-file: exclusions.yml
