@@ -7,6 +7,7 @@ modules:
     install:
       packages:
         - wlr-randr
+        - nwg-look
         - azote
         - swaybg
         - gammastep
