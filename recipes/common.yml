@@ -6,6 +6,10 @@ modules:
   - type: bling
     install:
       - rpmfusion
+  # disable sshd by default
+  - type: script
+    snippets:
+      - "systemctl disable sshd.service"
   # disable fedora flatpak service then set up flathub
   - type: script
     snippets:
