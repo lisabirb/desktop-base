@@ -53,6 +53,7 @@ modules:
         - virtualization
         - base-x
   - type: brew
+  # set up ublue-style automatic updates
   - type: script
     snippets:
       - "dnf -y install uupd"
