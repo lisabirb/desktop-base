@@ -4,9 +4,9 @@ description: Image with Niri
 base-image: quay.io/fedora-ostree-desktops/base-atomic
 image-version: 42
 modules:
-  - from-file: common.yml
-  - from-file: tuigreet.yml
-  - from-file: wayland-utilities.yml
+  - from-file: modules/common.yml
+  - from-file: modules/tuigreet.yml
+  - from-file: modules/wayland-utilities.yml
   - type: dnf
     repos:
       copr:
@@ -18,5 +18,5 @@ modules:
         - nautilus
         - zenity
         - xwayland-satellite
-  - from-file: asciicompat.yml
-  - from-file: exclusions.yml
+  - from-file: modules/asciicompat.yml
+  - from-file: modules/exclusions.yml
